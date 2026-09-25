@@ -1,0 +1,55 @@
+name: ARE flashcards
+
+on:
+  schedule:
+    # Both fire at 7:45 AM Chicago time (one for daylight time, one for standard time).
+    - cron: "45 12 * * 1-5"
+    - cron: "45 13 * * 1-5"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to run"
+        type: choice
+        default: test
+        options: [test, preview, status]
+
+permissions:
+  contents: write   # to save which day of the bank you're on
+
+concurrency:
+  group: are-flashcards
+  cancel-in-progress: false
+
+jobs:
+  flashcards:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Send flashcards
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+          TRIGGER_CRON: ${{ github.event.schedule }}
+          MODE: ${{ github.event.inputs.mode }}
+        run: |
+          case "$MODE" in
+            preview) python are_flashcards.py --preview ;;
+            status)  python are_flashcards.py --status ;;
+            test)    python are_flashcards.py --test ;;
+            *)       python are_flashcards.py ;;
+          esac
+      - name: Save place in the question bank
+        if: always()
+        run: |
+          if ! git diff --quiet are_progress.json 2>/dev/null || [ -n "$(git status --porcelain are_progress.json)" ]; then
+            git config user.name "are-bot"
+            git config user.email "are-bot@users.noreply.github.com"
+            git add are_progress.json
+            git commit -m "ARE bank: day $(python -c "import json;print(json.load(open('are_progress.json'))['next_index'])")"
+            git push
+          fi

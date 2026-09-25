@@ -1,0 +1,1245 @@
+{
+ "version": 1,
+ "days": [
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "additional services notice",
+     "reference": "AIA B101-2017 \u00a74.2, \u00a74.3",
+     "stem": "An architect is working under AIA B101-2017. Two weeks after the owner approves the Design Development documents, the owner directs a program change requiring substantial redesign of the building core. The project manager begins the redesign immediately to keep the client happy, planning to raise compensation at the next monthly meeting. What is the primary problem with this approach?",
+     "options": {
+      "A": "Redesign after Design Development approval is a correction of the architect's own work and is never compensable",
+      "B": "The architect must notify the owner before providing services that require an Additional Services change, or risk losing compensation for them",
+      "C": "The owner cannot change the program after Design Development approval without executing a new agreement",
+      "D": "The architect must obtain the consultants' written consent before a scope change takes effect"
+     },
+     "correct": "B",
+     "why_correct": "B101-2017 treats an owner-directed program change as a service that may require an Additional Services change, and requires the architect to notify the owner promptly and obtain written authorization before proceeding. Doing the work first undermines entitlement to both added fee and added time.",
+     "why_wrong": {
+      "A": "An owner-directed change is not a correction of the architect's work; fixing the architect's own errors is a separate matter.",
+      "C": "Owners may change the program at any time; the agreement provides a mechanism to adjust compensation and schedule.",
+      "D": "Consultant consent is governed by the architect-consultant agreements and is not a precondition to an owner-architect scope change."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "total float calculation",
+     "reference": "CPM scheduling fundamentals",
+     "stem": "A schedule has two paths from Notice to Proceed to Substantial Completion. Path 1: Mobilization (5 days), Foundations (10 days), Superstructure (8 days). Path 2: Mobilization (5 days), Underground Utilities (6 days), Superstructure (8 days). Both paths share Mobilization and Superstructure. How many days can the underground utility work slip before the completion date is affected?",
+     "options": {
+      "A": "0 days",
+      "B": "2 days",
+      "C": "4 days",
+      "D": "6 days"
+     },
+     "correct": "C",
+     "why_correct": "Path 1 totals 23 days and Path 2 totals 19 days, so Path 1 is critical. Underground Utilities carries total float equal to the difference, 23 minus 19, or 4 days.",
+     "why_wrong": {
+      "A": "Zero float would place the activity on the critical path, which Foundations occupies here.",
+      "B": "2 days would be correct only if the paths differed by 2 days.",
+      "D": "6 days is the activity's duration, not its float; slipping 6 days would delay completion by 2."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "correction period start",
+     "reference": "AIA A201-2017 \u00a712.2.2.1, \u00a79.8",
+     "stem": "The architect issues the Certificate of Substantial Completion on March 1. The owner occupies on March 15, the punch list is finished April 10, and final payment is certified May 1. Fourteen months after March 1, defective flashing is discovered. When did the one-year correction period begin, and where does the owner stand?",
+     "options": {
+      "A": "March 1; the correction period has expired, but the owner may still pursue the contractor for breach of the warranty that the work conforms to the contract documents",
+      "B": "March 1; the correction period has expired and the owner has no remaining recourse",
+      "C": "April 10; the period is still running, so the contractor must correct at its own cost",
+      "D": "May 1; the period runs from final payment, so the contractor must correct at its own cost"
+     },
+     "correct": "A",
+     "why_correct": "A201-2017 starts the one-year correction period at Substantial Completion, here March 1. The contract also states that the one-year period does not limit the contractor's other warranty obligations, so the owner retains a breach of warranty claim subject to the applicable statute of limitations.",
+     "why_wrong": {
+      "B": "This is the common misconception; the correction period and the warranty are distinct obligations.",
+      "C": "Punch list completion does not establish the start date.",
+      "D": "Final payment waives certain claims but does not start the correction period."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "net to gross efficiency",
+     "reference": "Programming fundamentals; efficiency ratios",
+     "stem": "Net assignable area for a suburban office building totals 24,000 SF. The client plans for 75 percent building efficiency. Zoning allows an FAR of 0.40 on a 100,000 SF lot. Which statement is correct?",
+     "options": {
+      "A": "Required gross is 18,000 SF, within the 40,000 SF allowed",
+      "B": "Required gross is 32,000 SF, within the 40,000 SF allowed",
+      "C": "Required gross is 32,000 SF, exceeding the 30,000 SF allowed",
+      "D": "Required gross is 42,000 SF, exceeding the 40,000 SF allowed"
+     },
+     "correct": "B",
+     "why_correct": "Gross equals net divided by efficiency: 24,000 \u00f7 0.75 = 32,000 SF. The zoning cap is 0.40 \u00d7 100,000 = 40,000 SF, so the program fits with 8,000 SF to spare.",
+     "why_wrong": {
+      "A": "Multiplying by 0.75 inverts the relationship; gross is always larger than net.",
+      "C": "The gross is right but the FAR calculation is wrong.",
+      "D": "42,000 SF implies an efficiency near 57 percent, far below the stated figure."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "vapor retarder placement",
+     "reference": "IBC/IECC vapor retarder provisions; Climate Zone 5",
+     "stem": "An architect is detailing an exterior wood-framed wall with cavity insulation in Chicago (Climate Zone 5A), with no continuous exterior insulation. A junior designer places a polyethylene sheet on the exterior face of the studs, directly behind the sheathing. What is the most significant problem?",
+     "options": {
+      "A": "Nothing; polyethylene on the exterior provides both air and vapor control in this climate",
+      "B": "It places a low-permeance layer on the cold side of the insulation, trapping outward vapor drive where it can condense",
+      "C": "It eliminates the air barrier, which the energy code requires to be a separate material",
+      "D": "It prevents drying to the exterior, which is not a concern in a heating climate"
+     },
+     "correct": "B",
+     "why_correct": "In a heating-dominated climate, winter vapor drive runs from the warm interior toward the cold exterior, and codes call for the vapor retarder on the interior side of frame walls in Zone 5. Polyethylene on the cold side stops vapor at the coldest plane in the assembly, exactly where condensation occurs.",
+     "why_wrong": {
+      "A": "Polyethylene can act as an air barrier, but its placement defeats its vapor function here.",
+      "C": "Air barrier continuity is still required regardless, and the vapor retarder does not exempt it.",
+      "D": "Drying to the exterior is what this wall needs and what the detail blocks."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "stair egress capacity",
+     "reference": "IBC 2021 Table 1004.5, \u00a71005.3.1, \u00a71011.2",
+     "stem": "A fully sprinklered three-story business occupancy has an 18,000 SF floor plate served by two exit stairways. Using 150 SF gross per occupant and a stairway capacity factor of 0.2 inches per occupant, with each stair carrying half the floor's occupants, what minimum clear width must each stairway provide?",
+     "options": {
+      "A": "12 inches",
+      "B": "24 inches",
+      "C": "36 inches",
+      "D": "44 inches"
+     },
+     "correct": "D",
+     "why_correct": "The floor holds 18,000 \u00f7 150 = 120 occupants, so 60 per stair, requiring 60 \u00d7 0.2 = 12 inches of capacity. The prescribed minimum stairway width of 44 inches governs, since capacity calculations and minimum dimensions are both checked and the larger controls.",
+     "why_wrong": {
+      "A": "12 inches is the raw capacity, meaningless alone because it is far below the minimum.",
+      "B": "24 inches is capacity for all 120 occupants and still below the minimum.",
+      "C": "36 inches applies to stairways serving fewer than 50 occupants."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "claims-made coverage",
+     "reference": "Professional liability insurance fundamentals",
+     "stem": "An architect is closing her sole practice and retiring. Her professional liability policy is written on a claims-made basis and expires at the end of the month. Her last project reached Substantial Completion three years ago. What should she do to remain protected?",
+     "options": {
+      "A": "Nothing; claims-made policies cover any claim arising from work performed while the policy was in force",
+      "B": "Purchase an extended reporting period, often called tail coverage, to cover claims reported after the policy ends",
+      "C": "Convert the policy to an occurrence form, which retroactively covers all prior projects",
+      "D": "Transfer the policy to the owners of her completed projects as additional insureds"
+     },
+     "correct": "B",
+     "why_correct": "A claims-made policy responds only to claims reported while coverage is in force, regardless of when the services were performed. Letting the policy lapse leaves prior work exposed for the remainder of the statute of repose, so retiring architects purchase an extended reporting period, commonly called tail coverage.",
+     "why_wrong": {
+      "A": "That describes an occurrence policy, which responds based on when the work was done rather than when the claim is made.",
+      "C": "Policies cannot be converted retroactively; the form is set at issuance.",
+      "D": "Additional insured status extends coverage to others under a live policy; it does not keep an expired policy alive."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "fee burn versus progress",
+     "reference": "Project financial management",
+     "stem": "A project with a $400,000 stipulated sum fee is at the end of Design Development. The DD phase was budgeted at 20 percent of the fee, and phases through DD total 50 percent. Labor charged to date is $240,000 and the work is genuinely complete through DD. What does this indicate, and what is the project manager's most appropriate first action?",
+     "options": {
+      "A": "The project is 10 percent under budget; no action is needed",
+      "B": "The project has spent 60 percent of the fee to deliver 50 percent of the work, so the manager should analyze which tasks overran and adjust staffing and scope control for remaining phases",
+      "C": "The project is on budget, because effort is always front-loaded in design",
+      "D": "The project is overspent, so the manager should immediately submit an Additional Services request to the owner"
+     },
+     "correct": "B",
+     "why_correct": "Earned value through DD is 50 percent of $400,000, or $200,000, against $240,000 spent, a $40,000 overrun with half the fee remaining. The first step is diagnosis: identify whether the cause was uncompensated scope, inefficiency or understaffed senior review, then correct staffing and control before Construction Documents, the largest phase.",
+     "why_wrong": {
+      "A": "The comparison is reversed; spending exceeds earned value.",
+      "C": "Front-loading is accounted for in the phase budgets, which already allocate effort by phase.",
+      "D": "An Additional Services request is only justified if the overrun stems from owner-directed changes, which the diagnosis has not yet established."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "certificate for payment meaning",
+     "reference": "AIA A201-2017 \u00a79.4.2",
+     "stem": "An owner argues that because the architect certified the contractor's payment applications, the architect guaranteed that all work billed was installed correctly. Under A201-2017, what does a Certificate for Payment actually represent?",
+     "options": {
+      "A": "A guarantee that the work is free from defects and complies with the contract documents",
+      "B": "A representation, based on the architect's observations at the site and the data in the application, that the work has progressed to the point indicated and that quality is in accordance with the documents, to the best of the architect's knowledge, information and belief",
+      "C": "A certification that the contractor has paid all subcontractors and suppliers to date",
+      "D": "An acceptance of the work that bars the owner from later rejecting it"
+     },
+     "correct": "B",
+     "why_correct": "A201 frames certification as a qualified representation grounded in site observations and the application data, expressly stating that it is not a representation that the architect made exhaustive or continuous inspections, reviewed construction means and methods, or examined how the contractor used the money.",
+     "why_wrong": {
+      "A": "No guarantee of defect-free work is given; that would exceed the standard of care.",
+      "C": "A201 states that certification does not represent that the architect has reviewed the contractor's use of funds.",
+      "D": "Certification is expressly not acceptance of nonconforming work, which may still be rejected."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "buildable envelope",
+     "reference": "Zoning analysis; setbacks and lot coverage",
+     "stem": "A 20,000 SF corner lot has front setbacks of 25 feet on both street frontages, side and rear setbacks of 10 feet, maximum lot coverage of 40 percent, and a height limit of three stories. The lot measures 100 feet by 200 feet with the 100-foot sides facing the two streets. What is the maximum footprint, and what governs it?",
+     "options": {
+      "A": "8,000 SF, governed by lot coverage",
+      "B": "9,750 SF, governed by the setback envelope",
+      "C": "6,500 SF, governed by setbacks after applying both front setbacks",
+      "D": "20,000 SF, since coverage limits apply only to impervious area"
+     },
+     "correct": "A",
+     "why_correct": "The setback envelope is 65 feet by 165 feet, or 10,725 SF, but lot coverage caps the footprint at 40 percent of 20,000 SF, which is 8,000 SF. When two constraints apply, the more restrictive governs.",
+     "why_wrong": {
+      "B": "9,750 SF misapplies the setback dimensions and ignores the coverage cap.",
+      "C": "6,500 SF double-counts setbacks, and coverage still governs.",
+      "D": "Lot coverage regulates building footprint, not impervious area, which is usually a separate standard."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "cavity wall flashing",
+     "reference": "Masonry cavity wall detailing; IBC flashing provisions",
+     "stem": "A brick veneer over steel stud backup is detailed with through-wall flashing at the base of the cavity and weeps in the head joints above. In review, the architect notes the flashing is shown running straight out to the face with square-cut ends at window jambs. What correction is most important?",
+     "options": {
+      "A": "Terminate the flashing behind the face of the brick to improve appearance",
+      "B": "Turn the flashing up at the ends to form end dams, so collected water is discharged through the weeps instead of running laterally into the wall",
+      "C": "Delete the weeps, since the flashing carries water out on its own",
+      "D": "Replace through-wall flashing with sealant at the brick base"
+     },
+     "correct": "B",
+     "why_correct": "Flashing collects water in a pan, and without end dams the water simply runs off the ends into the adjacent construction. Turning the flashing up at terminations forces water to the weeps, which is the only intended exit.",
+     "why_wrong": {
+      "A": "Flashing should extend to or beyond the face and be turned down as a drip; stopping it short lets water re-enter the wall.",
+      "C": "Weeps are required to drain the cavity; flashing without weeps creates a reservoir.",
+      "D": "Sealant is not a drainage path and will fail long before the wall does."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "common path and travel distance",
+     "reference": "IBC 2021 \u00a71006.2.1, \u00a71017.2",
+     "stem": "In a sprinklered business occupancy, an open office area has a single point from which occupants must travel 115 feet before reaching a point where two separate paths to exits become available. Total travel distance to the nearest exit is 220 feet. What is the compliance issue?",
+     "options": {
+      "A": "Travel distance is exceeded, since the sprinklered limit for B occupancy is 200 feet",
+      "B": "Common path of egress travel is exceeded, since the sprinklered limit for B occupancy is 100 feet, while the 220-foot travel distance is within the 300-foot sprinklered limit",
+      "C": "Neither limit is exceeded",
+      "D": "Both limits are exceeded"
+     },
+     "correct": "B",
+     "why_correct": "For B occupancies, sprinklered travel distance is permitted up to 300 feet, so 220 feet complies. Common path of egress travel, the portion where occupants have no choice of direction, is limited to 100 feet in sprinklered B occupancies, so 115 feet fails and the layout must provide an earlier choice of path.",
+     "why_wrong": {
+      "A": "200 feet is the unsprinklered B travel limit; the sprinklered limit is 300 feet.",
+      "C": "The common path violation is real and will be flagged in plan review.",
+      "D": "Travel distance complies, so calling both violations is incorrect."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "standard of care",
+     "reference": "AIA B101-2017 \u00a72.2",
+     "stem": "During negotiations, an owner asks the architect to agree that the construction documents will be free of errors and omissions, and that the architect will ensure the project is built in full compliance with all applicable codes. What is the most significant risk to the architect in accepting this language?",
+     "options": {
+      "A": "It shifts responsibility for the contractor's means and methods to the architect",
+      "B": "It elevates the architect's obligation above the standard of care, creating a warranty that professional liability insurance generally will not cover",
+      "C": "It makes the architect the Initial Decision Maker, which requires a separate agreement",
+      "D": "It voids the architect's copyright in the Instruments of Service"
+     },
+     "correct": "B",
+     "why_correct": "B101-2017 obligates the architect to exercise the skill and judgment of similarly situated professionals under similar circumstances, not to deliver perfection. Guarantee or warranty language creates a contractual duty beyond that standard, and professional liability policies typically exclude liability assumed by contract that exceeds the standard of care.",
+     "why_wrong": {
+      "A": "Means and methods stay with the contractor under the owner-contractor agreement; this language concerns document quality.",
+      "C": "The Initial Decision Maker role is designated in the owner-contractor agreement and is unrelated to a warranty of documents.",
+      "D": "Copyright in the Instruments of Service is addressed separately and is not affected by a performance warranty."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "consultant flow-down",
+     "reference": "AIA C401-2017; B101-2017 \u00a72.3",
+     "stem": "An architect engages a structural engineer under AIA C401. The owner-architect agreement contains a mutual waiver of consequential damages and a specific standard of care. Why does C401 bind the consultant to the architect on the same terms the architect owes the owner?",
+     "options": {
+      "A": "To make the consultant a third-party beneficiary of the owner-architect agreement",
+      "B": "To align the consultant's obligations with the architect's, so the architect is not left owing the owner duties it cannot enforce downstream",
+      "C": "To transfer the architect's coordination responsibility to the consultant",
+      "D": "To allow the owner to pay the consultant directly if the architect defaults"
+     },
+     "correct": "B",
+     "why_correct": "Flow-down provisions close the gap between what the architect promises the owner and what its consultants promise the architect. Without them, the architect could be liable to the owner for obligations the consultant never assumed and cannot be held to.",
+     "why_wrong": {
+      "A": "C401 does not create third-party beneficiary rights; it establishes obligations between architect and consultant.",
+      "C": "Overall coordination of the design remains the architect's responsibility.",
+      "D": "Direct payment is not a function of flow-down terms and is not provided by C401."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "submittal review scope",
+     "reference": "AIA A201-2017 \u00a73.12.8, \u00a74.2.7",
+     "stem": "A shop drawing for a storefront system shows a mullion profile different from the one specified. The contractor's stamp says the submittal was reviewed and approved. The architect stamps it approved without comment, and the deviation is later found to compromise the specified wind-load performance. Who bears primary responsibility for the deviation?",
+     "options": {
+      "A": "The architect alone, since approval of the submittal made the deviation part of the contract",
+      "B": "The contractor, because a deviation is not authorized unless the contractor gives specific written notice of it and the architect approves the deviation in writing",
+      "C": "The manufacturer, because product data is its responsibility",
+      "D": "The owner, because the owner paid for the installed system"
+     },
+     "correct": "B",
+     "why_correct": "A201 states that the contractor is not relieved of responsibility for deviations by the architect's approval unless the contractor gave specific written notice of the deviation and the architect gave written approval of that specific deviation. A general approval stamp does not authorize a silent substitution.",
+     "why_wrong": {
+      "A": "The architect's review is for the limited purpose of checking conformance with the design concept and information in the contract documents; it does not convert an unnoticed deviation into an authorized change.",
+      "C": "The manufacturer supplies data; the contractor is responsible for what it submits and installs.",
+      "D": "Payment does not shift responsibility for nonconforming work to the owner."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "rentable versus usable",
+     "reference": "BOMA measurement standards; load factor",
+     "stem": "A tenant requires 10,000 SF of usable area. The building's load factor is 1.18 and the asking rent is $32 per rentable SF per year. What is the tenant's approximate annual base rent?",
+     "options": {
+      "A": "$320,000",
+      "B": "$377,600",
+      "C": "$271,200",
+      "D": "$296,000"
+     },
+     "correct": "B",
+     "why_correct": "Rentable area equals usable area times the load factor: 10,000 \u00d7 1.18 = 11,800 RSF. Annual rent is 11,800 \u00d7 $32, or $377,600. Rent is charged on rentable area, which includes the tenant's share of building common areas.",
+     "why_wrong": {
+      "A": "$320,000 applies the rate to usable area, ignoring the load factor.",
+      "C": "$271,200 divides by the load factor instead of multiplying.",
+      "D": "$296,000 does not correspond to any consistent calculation of the two figures."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "tapered roof insulation",
+     "reference": "IBC \u00a71507 roof slope; low-slope roofing practice",
+     "stem": "A low-slope membrane roof over a flat structural deck requires positive drainage. Which approach and minimum slope should the documents show?",
+     "options": {
+      "A": "Slope the structure at 1/8 inch per foot and use uniform-thickness insulation",
+      "B": "Provide tapered insulation achieving a minimum slope of 1/4 inch per foot toward roof drains, with crickets between drains and at curbs",
+      "C": "Use uniform insulation and rely on the membrane to shed water",
+      "D": "Slope at 1/2 inch per foot minimum, which is required for all membrane roofs"
+     },
+     "correct": "B",
+     "why_correct": "The code requires roofs to be sloped for drainage, and a quarter inch per foot is the standard minimum for low-slope membrane roofs. Tapered insulation delivers that slope without sloping the structure, and crickets divert water around curbs and between drains so no ponding area is left.",
+     "why_wrong": {
+      "A": "An eighth inch per foot is below the standard minimum and ponds after normal deflection.",
+      "C": "Membranes resist water but ponding voids most warranties and accelerates failure.",
+      "D": "A half inch per foot exceeds what is required and wastes insulation thickness and height."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "ramp configuration",
+     "reference": "ADA Standards \u00a7405; IBC \u00a71012",
+     "stem": "An entry sequence must overcome a 40-inch elevation change with a ramp. At the maximum permitted running slope and maximum rise per run, what configuration is required, and what is the minimum ramp run length?",
+     "options": {
+      "A": "A single run at 1:12, 40 feet long, with no landing required",
+      "B": "Two runs at 1:12 with an intermediate landing, totaling at least 40 feet of ramp run plus landings, since a single run may not rise more than 30 inches",
+      "C": "A single run at 1:8, 26.7 feet long",
+      "D": "Three runs at 1:20, since the maximum rise per run is 12 inches"
+     },
+     "correct": "B",
+     "why_correct": "The maximum running slope is 1:12 and the maximum rise for any single run is 30 inches, so a 40-inch rise must be split with an intermediate landing at least 60 inches long. At 1:12, 40 inches of rise requires 480 inches, or 40 feet, of ramp run, plus landings.",
+     "why_wrong": {
+      "A": "A 40-inch rise exceeds the 30-inch maximum per run, so a landing is required.",
+      "C": "1:8 far exceeds the maximum running slope for an accessible ramp.",
+      "D": "1:20 is not a required slope, and 12 inches is not the maximum rise per run."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "net multiplier calculation",
+     "reference": "Financial management for design firms",
+     "stem": "A firm's annual direct labor cost is $500,000. Its indirect expenses, including indirect labor, rent, insurance and benefits, total $800,000. The firm wants a 15 percent profit on total revenue. Ignoring reimbursable expenses, what is the firm's overhead rate, and what net revenue must it collect to hit its profit target?",
+     "options": {
+      "A": "Overhead rate 0.63; net revenue of about $1,495,000",
+      "B": "Overhead rate 1.6; net revenue of about $1,300,000",
+      "C": "Overhead rate 1.6; net revenue of about $1,529,000",
+      "D": "Overhead rate 2.6; net revenue of about $1,950,000"
+     },
+     "correct": "C",
+     "why_correct": "The overhead rate is indirect expenses divided by direct labor: 800,000 \u00f7 500,000 = 1.6. Break-even cost is direct labor plus overhead, or $1,300,000. For profit to be 15 percent of revenue, break-even must equal 85 percent of revenue: 1,300,000 \u00f7 0.85 \u2248 $1,529,000.",
+     "why_wrong": {
+      "A": "0.63 inverts the ratio, dividing direct labor by overhead.",
+      "B": "$1,300,000 is break-even; it produces zero profit.",
+      "D": "2.6 is the break-even multiplier applied to direct labor, not the overhead rate, and adding 15 percent to break-even calculates profit on cost rather than on revenue."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "RFI handling",
+     "reference": "AIA A201-2017 \u00a74.2.11 through \u00a74.2.14",
+     "stem": "During construction, the contractor submits an RFI asking the architect to specify the sequence for installing rooftop mechanical units and the temporary shoring required. How should the architect respond?",
+     "options": {
+      "A": "Provide the requested sequence and shoring design, since the architect's field services include construction guidance",
+      "B": "Respond that sequencing and temporary shoring are the contractor's means and methods, while answering any genuine question about the design intent in the RFI",
+      "C": "Forward the RFI to the structural engineer for a shoring design at the owner's expense",
+      "D": "Reject the RFI without response, since RFIs may address only drawing discrepancies"
+     },
+     "correct": "B",
+     "why_correct": "A201 reserves means, methods, techniques, sequences and procedures to the contractor, and the architect's interpretations are limited to the intent of the contract documents. Answering the design-intent portion while declining the means-and-methods portion is responsive without assuming the contractor's responsibility.",
+     "why_wrong": {
+      "A": "Providing sequencing and shoring assumes contractor responsibility and exposes the architect to safety liability.",
+      "C": "Engaging a consultant to design the contractor's temporary works shifts the same risk and is not the owner's obligation.",
+      "D": "Silence is not an option; the architect must respond with reasonable promptness to requests for interpretation."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "substitution during bidding",
+     "reference": "AIA A701-2018; Division 01 substitution procedures",
+     "stem": "Four days before bids are due, a bidder asks to substitute a different roofing membrane for the specified product, claiming equivalence. The specifications require substitution requests at least ten days before bid date. How should the architect proceed?",
+     "options": {
+      "A": "Approve it informally by email to the bidder who asked, so bidding is not delayed",
+      "B": "Decline the late request under the stated procedure, or, if the owner and architect consider it worth evaluating, extend the deadline and issue an addendum to all bidders",
+      "C": "Allow the bidder to carry it as an alternate and evaluate it after bid opening",
+      "D": "Approve it only if the bidder certifies the product meets the performance specification"
+     },
+     "correct": "B",
+     "why_correct": "Bidding requirements must apply equally to all bidders, and any change in the basis of bidding reaches bidders only through an addendum. Enforcing the stated deadline is proper, and if the substitution merits consideration, the remedy is an addendum to everyone rather than a private approval.",
+     "why_wrong": {
+      "A": "Informal approval to a single bidder destroys the equal basis of competition and is not part of the contract documents.",
+      "C": "Post-bid evaluation of an unapproved substitution rewards a bid based on a different scope than others carried.",
+      "D": "A bidder's own certification does not substitute for the architect's evaluation, and the timing problem remains."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "allowable area frontage increase",
+     "reference": "IBC 2021 \u00a7506.2, \u00a7506.3",
+     "stem": "A single-story building has a tabular allowable area of 15,000 SF for its occupancy and construction type. The building perimeter is 400 feet, all of it fronting on public ways or open space at least 30 feet wide. Using the frontage increase formula, what is the allowable area before any sprinkler increase?",
+     "options": {
+      "A": "15,000 SF, since the increase applies only to sprinklered buildings",
+      "B": "18,750 SF",
+      "C": "26,250 SF",
+      "D": "30,000 SF"
+     },
+     "correct": "C",
+     "why_correct": "The frontage increase is If = [F/P \u2212 0.25] \u00d7 W/30. With F/P = 1.0 and W = 30, If = 0.75. Allowable area becomes 15,000 + (15,000 \u00d7 0.75) = 26,250 SF.",
+     "why_wrong": {
+      "A": "The frontage increase is independent of sprinklers, which provide a separate increase.",
+      "B": "18,750 SF results from applying a 25 percent increase, which is the amount subtracted in the formula.",
+      "D": "30,000 SF doubles the tabular area, which corresponds to a sprinkler increase rather than frontage."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "masonry joints",
+     "reference": "Masonry movement joint practice",
+     "stem": "A building has a clay brick veneer on one elevation and a concrete masonry unit back-up wall on another exposed elevation. What movement joints belong in each, and why?",
+     "options": {
+      "A": "Control joints in both, since all masonry shrinks over time",
+      "B": "Expansion joints in the brick, which expands with moisture absorption and heat, and control joints in the CMU, which shrinks as it cures and dries",
+      "C": "Expansion joints in both, since both materials expand in service",
+      "D": "Movement joints are only required where the wall exceeds 100 feet in length"
+     },
+     "correct": "B",
+     "why_correct": "Fired clay brick grows irreversibly as it absorbs moisture after manufacture and expands thermally, so brick needs compressible expansion joints. Concrete masonry shrinks as it cures and dries, so CMU needs control joints that create a planned location for cracking.",
+     "why_wrong": {
+      "A": "Treating brick as a shrinking material leads to spalling and cracking at corners and openings.",
+      "C": "CMU does not expand overall; drying shrinkage dominates its behavior.",
+      "D": "Joint spacing depends on material, geometry and openings, not a single length threshold."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "HVAC system selection",
+     "reference": "Systems selection for small commercial buildings",
+     "stem": "A three-story, 45,000 SF speculative office building in Chicago needs a system that allows tenant-by-tenant metering, simultaneous heating and cooling across zones, and modest floor-to-floor heights. Which system best fits, and why?",
+     "options": {
+      "A": "A single constant-volume rooftop unit with ductwork serving all floors, because first cost is lowest",
+      "B": "A variable refrigerant flow system with dedicated outdoor air, because it zones finely, handles simultaneous heating and cooling, meters by tenant, and uses compact distribution",
+      "C": "A four-pipe fan coil system with a central chiller and boiler, because it is the only way to zone a speculative building",
+      "D": "Hydronic radiant floors throughout, because they provide the greatest occupant comfort"
+     },
+     "correct": "B",
+     "why_correct": "VRF with a dedicated outdoor air system matches every stated constraint: refrigerant piping is compact, zones are individually controlled, heat recovery between zones handles simultaneous demands, and energy use can be attributed by tenant. Ventilation is decoupled so outdoor air is conditioned centrally.",
+     "why_wrong": {
+      "A": "A single constant-volume unit cannot zone for tenants or handle simultaneous heating and cooling.",
+      "C": "Four-pipe fan coils can zone well, but the central plant and larger distribution conflict with the metering and floor-to-floor constraints.",
+      "D": "Radiant floors respond slowly and do not address cooling loads or ventilation in an office with high internal gains."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "instruments of service license",
+     "reference": "AIA B101-2017 \u00a77.3",
+     "stem": "After the project is complete and the architect has been paid in full, the owner hires a different firm to design a nearly identical second building on another site, providing that firm with the original CAD files. Under an unmodified B101-2017, what is the owner's position?",
+     "options": {
+      "A": "The owner owns the drawings outright once final payment is made and may reuse them freely",
+      "B": "The owner holds a limited license to use the Instruments of Service for this project, and reuse on another project without the architect's agreement exceeds that license",
+      "C": "The owner may reuse the documents on any project as long as the architect's seal and title block are removed",
+      "D": "Copyright automatically transfers to the owner at Substantial Completion"
+     },
+     "correct": "B",
+     "why_correct": "B101-2017 provides that the architect retains ownership of and copyright in the Instruments of Service, and grants the owner a nonexclusive license to use them solely for the project in question, including its construction, use, maintenance and alteration. Reuse on a different project falls outside that license.",
+     "why_wrong": {
+      "A": "Payment perfects the license; it does not transfer ownership of the copyright.",
+      "C": "Removing identification does not create a right to reuse, though the agreement does require it if the owner rightfully uses documents without the architect.",
+      "D": "There is no automatic transfer of copyright; a transfer would require express written agreement."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "change order authority",
+     "reference": "AIA A201-2017 \u00a77.1 through \u00a77.4",
+     "stem": "The owner wants to add a skylight during construction, but the contractor disputes the proposed cost and the owner wants the work to start now. Which instrument allows the work to proceed without the contractor's agreement on price?",
+     "options": {
+      "A": "A Change Order, signed by the owner and architect",
+      "B": "A Construction Change Directive, signed by the owner and architect, with the cost adjustment determined later",
+      "C": "An Architect's Supplemental Instruction, issued by the architect alone",
+      "D": "A Minor Change in the Work, issued by the architect alone"
+     },
+     "correct": "B",
+     "why_correct": "A Construction Change Directive is signed by the owner and architect and directs a change prior to agreement on an adjustment in cost or time, with the adjustment determined afterward by one of the methods the contract allows. A Change Order requires all three signatures, including the contractor's, so a price dispute blocks it.",
+     "why_wrong": {
+      "A": "A Change Order requires the contractor's signature, which is exactly what is missing.",
+      "C": "An ASI conveys interpretations and minor changes; it cannot authorize added cost or time.",
+      "D": "A Minor Change in the Work must be consistent with the intent of the documents and involve no adjustment to contract sum or time; a new skylight does both."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "final payment waiver",
+     "reference": "AIA A201-2017 \u00a79.10.4, \u00a79.10.5",
+     "stem": "An owner makes final payment and then discovers that a rooftop unit was installed with the wrong capacity, which had been noted in writing before final payment but never resolved. What is the owner's position under A201-2017?",
+     "options": {
+      "A": "The claim is waived, because making final payment waives all owner claims",
+      "B": "The claim survives, because claims identified in writing as unsettled at the time of final application are excepted from the waiver, as are claims arising from failure to comply with the documents and warranty terms",
+      "C": "The claim survives only if the owner withheld retainage",
+      "D": "The claim must be pursued against the architect, who certified final payment"
+     },
+     "correct": "B",
+     "why_correct": "A201 provides that the owner's acceptance of final payment waives claims except those identified in writing as unsettled at the time of final application, plus claims for failure of the work to comply with the contract documents and terms of warranties. The written notice here preserves the claim.",
+     "why_wrong": {
+      "A": "The waiver is expressly subject to those exceptions.",
+      "C": "Retainage affects leverage, not the legal survival of an identified claim.",
+      "D": "Certification is a qualified professional representation, not a guarantee that shifts the contractor's liability to the architect."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "nonseparated mixed occupancy",
+     "reference": "IBC 2021 \u00a7508.3, \u00a7508.4",
+     "stem": "A building combines an assembly space, business offices and a small storage area. The design team chooses the nonseparated occupancies option. What is the principal consequence?",
+     "options": {
+      "A": "Fire barriers with a rating from the separation table are required between each occupancy",
+      "B": "The most restrictive requirements for allowable height, allowable area and fire protection systems apply to the entire building based on all occupancies present",
+      "C": "Each occupancy is evaluated independently for allowable area, as if it were a separate building",
+      "D": "The assembly occupancy must be classified as business, since it is the smaller portion"
+     },
+     "correct": "B",
+     "why_correct": "Under the nonseparated option no fire separation is required between occupancies, but the code applies the most restrictive height, area and fire protection requirements of the occupancies present to the whole building. Separated occupancies is the alternative, which requires rated separations and proportional area calculations.",
+     "why_wrong": {
+      "A": "Required rated separations characterize the separated occupancies option.",
+      "C": "Independent evaluation applies to a building with fire walls creating separate buildings.",
+      "D": "Occupancies are classified by use; a small assembly space may be classified as B only if it meets the threshold conditions the code sets."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "rebar cover",
+     "reference": "ACI 318 concrete cover requirements",
+     "stem": "A foundation detail shows a concrete footing cast directly against undisturbed earth with #6 bars at 2 inches of clear cover, and a retaining wall face exposed to earth with #5 bars at 1 inch of cover. What is the review comment?",
+     "options": {
+      "A": "Both are acceptable, since cover is only an aesthetic consideration",
+      "B": "Both are insufficient: concrete cast against and permanently exposed to earth generally requires 3 inches of cover, and formed surfaces exposed to earth or weather require about 1.5 inches for #5 and smaller",
+      "C": "Only the footing is insufficient; 1 inch is acceptable for all formed surfaces",
+      "D": "Cover requirements apply only to slabs on grade"
+     },
+     "correct": "B",
+     "why_correct": "Cover protects reinforcement from corrosion and provides fire resistance and bond. Concrete cast against earth carries the largest requirement, commonly 3 inches, and formed surfaces exposed to earth or weather require roughly 1.5 inches for smaller bars and 2 inches for larger ones.",
+     "why_wrong": {
+      "A": "Cover is a durability and structural requirement, not an aesthetic one.",
+      "C": "One inch of cover applies to interior surfaces not exposed to earth or weather.",
+      "D": "Cover requirements apply to all reinforced concrete elements."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "glazing performance priorities",
+     "reference": "IECC envelope requirements; climate zone 5",
+     "stem": "For a Chicago office building, the team must choose between two glazing units at similar cost: Unit 1 with U-factor 0.28 and SHGC 0.40, and Unit 2 with U-factor 0.38 and SHGC 0.25. Loads are heating-dominated with significant internal gains. What is the most defensible reasoning?",
+     "options": {
+      "A": "Unit 2, because a lower SHGC always reduces annual energy use",
+      "B": "Unit 1 on north and south with shading, since the lower U-factor reduces winter heat loss, which dominates in this climate, while solar gain on the south can be controlled with overhangs",
+      "C": "Unit 2 everywhere, because glare is the controlling factor in offices",
+      "D": "Either unit, since the energy code regulates only U-factor"
+     },
+     "correct": "B",
+     "why_correct": "In a heating-dominated climate, conductive loss through glazing drives annual energy more than solar gain, favoring the lower U-factor. South gain can be managed geometrically with horizontal shading, whereas conductive loss cannot be shaded away.",
+     "why_wrong": {
+      "A": "Low SHGC reduces cooling but also removes useful winter gain, and a higher U-factor increases losses across the whole heating season.",
+      "C": "Glare is addressed by visible transmittance, shading and interior controls rather than by SHGC alone.",
+      "D": "The energy code regulates both U-factor and SHGC for fenestration."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "firm legal structure",
+     "reference": "Business structures for architectural practice",
+     "stem": "Two architects forming a new firm want to limit each partner's exposure to business debts and to the other partner's ordinary business liabilities, while keeping profits taxed once at the individual level. Which consideration is most accurate?",
+     "options": {
+      "A": "A general partnership meets both goals because partners share liability equally",
+      "B": "A C corporation is the only structure that limits personal liability for business debts",
+      "C": "A limited liability company or professional corporation can limit exposure to business debts while allowing pass-through taxation, but neither shields an architect from personal liability for their own professional negligence",
+      "D": "A sole proprietorship for each architect, operating jointly, achieves the same protection with less paperwork"
+     },
+     "correct": "C",
+     "why_correct": "LLCs and professional corporations limit owners' personal exposure to business obligations, and both can be structured for pass-through taxation. However, licensing law and common law hold a design professional personally accountable for their own negligent professional acts, which is precisely why professional liability insurance exists.",
+     "why_wrong": {
+      "A": "General partners are jointly and severally liable for partnership obligations, which is the opposite of the goal.",
+      "B": "C corporations limit liability but are taxed at the corporate level, with dividends taxed again at the individual level.",
+      "D": "Sole proprietors have unlimited personal liability for business debts."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "nonconforming work observed",
+     "reference": "AIA A201-2017 \u00a74.2.6; B101-2017 \u00a73.6.2",
+     "stem": "On a site visit, the architect observes that fire-rated assemblies in a corridor are being installed without the tested framing spacing shown in the listed assembly. What is the architect's appropriate action under AIA agreements?",
+     "options": {
+      "A": "Direct the contractor's workers to stop and to correct the spacing immediately",
+      "B": "Say nothing, since the architect does not control means and methods and the special inspector will catch it",
+      "C": "Notify the contractor and the owner in writing, and, if warranted, reject the work as not conforming to the contract documents",
+      "D": "Issue a Construction Change Directive revising the assembly to match what was installed"
+     },
+     "correct": "C",
+     "why_correct": "The architect has authority to reject work that does not conform to the contract documents and a duty to keep the owner informed of known deviations. Written notice to contractor and owner, with rejection where warranted, exercises that authority without directing the contractor's workforce.",
+     "why_wrong": {
+      "A": "Directing the contractor's employees assumes control over means and methods and site safety.",
+      "B": "Silence about a known life-safety deviation is inconsistent with the architect's obligation to report to the owner.",
+      "D": "A CCD changes the work at the owner's direction; it should not be used to paper over defective installation."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "initial decision maker",
+     "reference": "AIA A201-2017 \u00a715.2",
+     "stem": "A contractor submits a claim for 14 additional days caused by differing site conditions. No separate Initial Decision Maker was named in the owner-contractor agreement. Who makes the initial decision, and what is its effect?",
+     "options": {
+      "A": "The owner, whose decision is final and binding",
+      "B": "The architect, as the default Initial Decision Maker; the initial decision is a condition precedent to mediation, but it is not final and binding",
+      "C": "A mediator, since claims go directly to mediation",
+      "D": "The contractor's surety, which evaluates schedule claims"
+     },
+     "correct": "B",
+     "why_correct": "A201 makes the architect the Initial Decision Maker unless the agreement names someone else. The initial decision is required before mediation and may approve, reject or suggest a compromise, but either party may proceed to mediation and then binding dispute resolution.",
+     "why_wrong": {
+      "A": "The owner is a party to the dispute and does not decide it; no initial decision is final and binding.",
+      "C": "Mediation follows the initial decision rather than replacing it.",
+      "D": "The surety's role arises on default, not in routine claim evaluation."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "soils report interpretation",
+     "reference": "Geotechnical investigation; foundation selection",
+     "stem": "A geotechnical report for an urban infill site finds 18 feet of uncontrolled fill over dense sand, with groundwater at 12 feet, and recommends an allowable bearing pressure of 1,500 psf on the fill or 6,000 psf on the sand. The program is a four-story building with heavily loaded columns. What is the most appropriate conclusion at the analysis stage?",
+     "options": {
+      "A": "Shallow spread footings on the fill are appropriate because the bearing pressure is adequate for a four-story building",
+      "B": "Deep foundations or removal and replacement of the fill should be carried in the budget, and the choice will drive both cost and schedule contingency",
+      "C": "A mat foundation on the fill eliminates settlement concerns regardless of fill quality",
+      "D": "The groundwater depth makes the site undevelopable"
+     },
+     "correct": "B",
+     "why_correct": "Uncontrolled fill has unpredictable compressibility, and 1,500 psf will not carry concentrated column loads without excessive or differential settlement. The realistic options are extending to the dense sand with deep foundations or removing and replacing the fill as engineered backfill, and the analysis phase should price that risk.",
+     "why_wrong": {
+      "A": "1,500 psf is low for concentrated loads, and the concern with uncontrolled fill is differential settlement rather than capacity alone.",
+      "C": "A mat spreads load but still settles with the material beneath it; it does not cure uncontrolled fill.",
+      "D": "Groundwater at 12 feet is a constructability and waterproofing issue, not a bar to development."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "firestopping systems",
+     "reference": "ASTM E814 / UL 1479; IBC \u00a7714",
+     "stem": "A plumbing riser penetrates a two-hour rated floor assembly. The specification must address the penetration. Which requirement is correct?",
+     "options": {
+      "A": "Any intumescent sealant may be used as long as it is applied continuously around the pipe",
+      "B": "A tested through-penetration firestop system matching the specific assembly, penetrant material and size must be specified, with F and T ratings appropriate to the condition",
+      "C": "Filling the annular space with mineral wool alone satisfies the code",
+      "D": "Rated penetrations are required only in walls, not floors"
+     },
+     "correct": "B",
+     "why_correct": "Firestopping is system-specific, tested as an assembly of the rated construction, the penetrant and the fill materials. The F rating measures flame passage and the T rating measures temperature rise on the unexposed side, which matters for floor penetrations where combustibles may sit on the surface.",
+     "why_wrong": {
+      "A": "Products are listed only within tested systems; a generic sealant application is not a system.",
+      "C": "Mineral wool is a component of some systems, not a complete listed assembly.",
+      "D": "Horizontal assemblies require protected penetrations just as walls do."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "cost escalation",
+     "reference": "Preliminary cost estimating; escalation",
+     "stem": "A conceptual estimate prices a project at $250 per SF in today's dollars for a 60,000 SF building. Construction will start in 18 months and last 12 months, and the estimator uses 4 percent annual escalation to the construction midpoint. What is the escalated construction cost, to the nearest $100,000?",
+     "options": {
+      "A": "$15,000,000",
+      "B": "$15,600,000",
+      "C": "$16,200,000",
+      "D": "$16,900,000"
+     },
+     "correct": "C",
+     "why_correct": "The midpoint of construction is 18 + 6 = 24 months, or 2 years out. Escalated unit cost is 250 \u00d7 1.04\u00b2 = $270.40 per SF, and 60,000 \u00d7 270.40 = $16,224,000, which rounds to $16.2 million.",
+     "why_wrong": {
+      "A": "$15,000,000 is today's cost with no escalation.",
+      "B": "$15,600,000 escalates only one year.",
+      "D": "$16,900,000 corresponds to roughly three years of escalation, escalating to the end of construction rather than the midpoint."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "title and licensure",
+     "reference": "State licensing statutes; NCARB model law",
+     "stem": "An unlicensed employee with eight years of experience has completed the AXP but not all ARE divisions. The firm wants to give her a title on business cards and in proposals. Which is the most defensible approach?",
+     "options": {
+      "A": "Project Architect, since she performs the work of an architect under supervision",
+      "B": "Associate Architect, since the word Associate qualifies the title",
+      "C": "Architectural Designer or a similar non-restricted title, because state statutes restrict use of the title architect to licensed individuals",
+      "D": "Any title is acceptable in proposals, since licensure restrictions apply only to sealing drawings"
+     },
+     "correct": "C",
+     "why_correct": "State practice acts restrict both the practice of architecture and the use of the title architect and its derivatives. Titles such as architectural designer or designer avoid an implied claim of licensure, which is why firms use them for unlicensed staff.",
+     "why_wrong": {
+      "A": "Project Architect contains the restricted title and implies licensure regardless of supervision.",
+      "B": "Qualifiers like Associate or Intern generally do not cure the restriction, and many states specifically prohibit such combinations.",
+      "D": "Title restrictions apply to representations to the public, including proposals and business cards, not only to sealing."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "fast-track risk",
+     "reference": "Project delivery and phased construction",
+     "stem": "An owner wants to shorten the schedule by bidding foundations while the superstructure documents are still in progress. Which statement best characterizes the trade-off the architect should explain?",
+     "options": {
+      "A": "Fast-tracking reduces overall cost because early packages lock in prices before escalation",
+      "B": "Fast-tracking compresses the schedule but increases the risk of change orders, since later design decisions can conflict with work already bid or built",
+      "C": "Fast-tracking eliminates the need for a guaranteed maximum price, since each package is separately priced",
+      "D": "Fast-tracking shifts document coordination responsibility to the contractor once the first package is issued"
+     },
+     "correct": "B",
+     "why_correct": "Overlapping design and construction buys time by committing to early packages before the full design is resolved. When later decisions exceed the assumptions in an earlier package, the change surfaces as a change order or rework, so the schedule gain is paid for in cost risk and requires disciplined design freezes.",
+     "why_wrong": {
+      "A": "Escalation savings are possible but not assured, and change orders frequently offset them.",
+      "C": "A GMP can still be used and is common on fast-track projects.",
+      "D": "Coordination of the design remains the architect's responsibility regardless of packaging."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "retainage and substantial completion",
+     "reference": "AIA A201-2017 \u00a79.8.5",
+     "stem": "At Substantial Completion, the punch list contains 40 items with an estimated correction value of $25,000. The contract is $5,000,000 with 5 percent retainage, and the architect is preparing the Certificate of Substantial Completion. What is the appropriate treatment of the remaining funds?",
+     "options": {
+      "A": "Release all retainage, since Substantial Completion has been achieved",
+      "B": "Withhold the full $250,000 retainage until final completion regardless of punch list value",
+      "C": "Provide for payment of the balance in the Certificate, with an amount withheld that is sufficient to cover the cost of completing the incomplete work, commonly with a factor for the owner's protection",
+      "D": "Convert the retainage to liquidated damages until the punch list is complete"
+     },
+     "correct": "C",
+     "why_correct": "A201 contemplates that the Certificate of Substantial Completion fixes responsibilities and states the sum to be paid, with an amount retained sufficient to complete or correct the remaining work. Tying the withholding to the value of the remaining work, rather than reflexively holding all retainage, is the contractual logic.",
+     "why_wrong": {
+      "A": "Releasing everything removes the owner's leverage and protection for incomplete work.",
+      "B": "Holding ten times the punch list value is not supported by the contract and invites a claim.",
+      "D": "Liquidated damages apply to failure to complete on time and are not a substitute for retainage."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "adaptive reuse compliance path",
+     "reference": "International Existing Building Code compliance methods",
+     "stem": "A client proposes converting a 1920s warehouse into apartments. Which statement best describes how existing building code compliance is approached?",
+     "options": {
+      "A": "All existing conditions must be brought fully into compliance with the code for new construction",
+      "B": "The existing building code offers compliance methods, including prescriptive, work area and performance approaches, and a change of occupancy triggers specific requirements within the chosen method",
+      "C": "Buildings over 50 years old are exempt from code compliance as historic structures",
+      "D": "Only the altered portions are regulated, and a change of occupancy has no code consequence"
+     },
+     "correct": "B",
+     "why_correct": "The IEBC provides alternative compliance methods so that existing buildings are not judged solely against new construction standards. A change of occupancy carries its own requirements, typically addressing means of egress, fire protection, structural loads and accessibility, within whichever method the team selects.",
+     "why_wrong": {
+      "A": "Full new-construction compliance is generally neither required nor achievable, which is why the IEBC exists.",
+      "C": "Age does not create an exemption; historic provisions offer flexibility but require designation and still address life safety.",
+      "D": "A change of occupancy is one of the most significant triggers in the existing building code."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "rainscreen drainage",
+     "reference": "Pressure-equalized rainscreen principles; curtain wall drainage",
+     "stem": "A unitized curtain wall is detailed with an exterior gasket at the glazing pocket and no drainage path at the horizontal members. Water appears at the interior after wind-driven rain. What principle was violated?",
+     "options": {
+      "A": "The exterior seal should have been a wet-applied sealant instead of a gasket",
+      "B": "The assembly must drain and equalize pressure, with the glazing pocket weeped to the exterior at horizontals and the primary air and water seal located at the interior plane",
+      "C": "Water penetration is inevitable in curtain wall and must be managed by interior gutters",
+      "D": "The glazing should have been face-sealed with structural silicone on all four sides"
+     },
+     "correct": "B",
+     "why_correct": "Modern curtain wall is designed to admit some water and remove it, with an interior air seal to limit the pressure difference driving water inward and weeps at horizontal members to drain the glazing pocket. Relying on a perfect exterior seal is a face-sealed strategy that fails at any breach.",
+     "why_wrong": {
+      "A": "Changing the exterior seal material does not create the required drainage path.",
+      "C": "Interior gutters are not the standard remedy; drainage belongs within the framing to the exterior.",
+      "D": "Structural silicone glazing still requires drainage and an interior air seal."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "lateral system selection",
+     "reference": "Structural systems; lateral force resistance",
+     "stem": "A six-story office building requires an open, column-free perimeter for glazing and flexible interior partitions, with a central core containing elevators and stairs. Which lateral system is the most natural fit?",
+     "options": {
+      "A": "Perimeter braced frames, which keep bracing out of tenant space",
+      "B": "A core shear wall system using the elevator and stair enclosure walls, keeping the perimeter clear and consolidating lateral resistance in walls already required for enclosure",
+      "C": "Interior moment frames distributed evenly across each floor plate",
+      "D": "Diaphragm action of the floor slabs alone"
+     },
+     "correct": "B",
+     "why_correct": "The core walls are already required for elevator and stair enclosure and fire separation, so using them for lateral resistance exploits an element the program demands. This keeps the perimeter free of bracing and leaves tenant space unobstructed.",
+     "why_wrong": {
+      "A": "Perimeter bracing conflicts directly with the requirement for continuous glazing.",
+      "C": "Distributed interior moment frames add cost and depth and constrain partition flexibility more than core walls.",
+      "D": "Diaphragms distribute forces to vertical elements; they are not a vertical lateral system themselves."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "statute of repose",
+     "reference": "Risk management; record retention policy",
+     "stem": "A firm is setting a document retention policy and asks how long project records should be kept. Which reasoning best supports the policy?",
+     "options": {
+      "A": "Three years, matching the typical warranty period in construction contracts",
+      "B": "Until final payment is received, after which claims are waived",
+      "C": "At least through the applicable statute of repose in the project's jurisdiction, since that period caps the window in which a claim can be brought regardless of when a defect is discovered",
+      "D": "Permanently, because no state limits the period for bringing a construction defect claim"
+     },
+     "correct": "C",
+     "why_correct": "A statute of repose sets an outside limit, running from substantial completion, after which claims arising from design and construction may no longer be brought, regardless of discovery. Retaining records through that period preserves the firm's ability to defend itself while allowing eventual disposal.",
+     "why_wrong": {
+      "A": "The one-year correction period and any warranty period are contractor obligations and do not govern the architect's exposure.",
+      "B": "Final payment waives certain owner claims against the contractor; it does not extinguish claims against the architect.",
+      "D": "Nearly all states have statutes of repose, so permanent retention is unnecessary, though some records may be kept longer for other reasons."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "resource leveling",
+     "reference": "Staffing plans and resource management",
+     "stem": "A project's staffing plan shows the same two senior technical staff assigned at 100 percent to Construction Documents on two projects whose CD phases overlap by six weeks. Which response addresses the problem without changing either project's delivery date?",
+     "options": {
+      "A": "Reduce the level of detail in both document sets to fit available hours",
+      "B": "Level the resources by resequencing tasks within each project's float and assigning qualified staff from other teams to the overlapping weeks",
+      "C": "Ask both owners to extend their schedules by six weeks",
+      "D": "Approve overtime for the two staff members for the overlap period"
+     },
+     "correct": "B",
+     "why_correct": "Resource leveling reallocates work within available float and redistributes it across qualified staff so demand does not exceed capacity. It preserves the delivery dates, which is the stated constraint, while avoiding a quality or burnout penalty.",
+     "why_wrong": {
+      "A": "Reducing document quality to fit staffing trades a schedule problem for a liability problem.",
+      "C": "Extending schedules changes the delivery dates the question holds fixed.",
+      "D": "Sustained overtime for the same two people raises error rates and turnover, and is a stopgap rather than a plan."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "site visit standard",
+     "reference": "AIA B101-2017 \u00a73.6.2.1",
+     "stem": "An owner asks the architect to guarantee that defective work will be caught, noting that the architect visits the site weekly. How should the architect describe the scope of construction phase observation under B101-2017?",
+     "options": {
+      "A": "Visits are exhaustive inspections of the work in place, which is why weekly frequency was chosen",
+      "B": "Visits occur at intervals appropriate to the stage of construction to become generally familiar with the progress and quality of the work, and are expressly not exhaustive or continuous inspections",
+      "C": "Visits are made only when the contractor requests them",
+      "D": "Visits transfer responsibility for quality control from the contractor to the architect"
+     },
+     "correct": "B",
+     "why_correct": "B101 defines site visits as periodic and aimed at general familiarity with progress and quality, and states that the architect is not required to make exhaustive or continuous on-site inspections. Quality control of the work remains with the contractor.",
+     "why_wrong": {
+      "A": "Exhaustive inspection is the opposite of the stated standard and would create an unsupportable duty.",
+      "C": "Visits are scheduled by the architect at appropriate intervals, not on contractor demand.",
+      "D": "Responsibility for quality control belongs to the contractor throughout."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "solar orientation analysis",
+     "reference": "Site analysis; passive design fundamentals",
+     "stem": "For an office building in Chicago, the team is evaluating glazing distribution. Which analysis conclusion is best supported by the climate?",
+     "options": {
+      "A": "West glazing should be maximized to capture afternoon daylight and heat",
+      "B": "South glazing is the most controllable orientation, since high summer sun is readily shaded by horizontal devices while low winter sun contributes useful heat",
+      "C": "North glazing should be minimized because it provides no usable daylight",
+      "D": "Orientation is unimportant when high-performance glazing is specified"
+     },
+     "correct": "B",
+     "why_correct": "Because the sun is high in summer and low in winter on the south, a horizontal overhang can block summer gain while admitting winter gain. In a heating-dominated climate like Chicago this makes south the most useful and controllable orientation.",
+     "why_wrong": {
+      "A": "Low afternoon west sun is difficult to shade and drives peak cooling loads and glare.",
+      "C": "North provides consistent diffuse daylight with little glare, which is valuable for workspaces.",
+      "D": "Glazing performance mitigates but does not eliminate orientation-driven gain and glare."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "specification types",
+     "reference": "MasterFormat; prescriptive and performance specifying",
+     "stem": "For a complex air barrier assembly, the architect wants the manufacturer and installer to take responsibility for meeting a measured leakage rate, rather than dictating each component. Which specification approach fits, and what must the section include?",
+     "options": {
+      "A": "A proprietary specification naming a single product, with no testing requirement",
+      "B": "A performance specification stating the required leakage rate, test method and acceptance criteria, along with submittal, mockup and field testing requirements",
+      "C": "A descriptive specification detailing each material's composition, leaving performance to the architect",
+      "D": "A reference standard specification citing the standard alone, without acceptance criteria"
+     },
+     "correct": "B",
+     "why_correct": "A performance specification sets the required outcome and the means of verifying it, which is what shifts responsibility for achieving the result. Without a named test method, acceptance criteria and field testing, the requirement is unenforceable.",
+     "why_wrong": {
+      "A": "A proprietary specification with no testing controls the product but not the installed performance.",
+      "C": "Describing composition places responsibility for the result back on the architect.",
+      "D": "Citing a standard without acceptance criteria leaves nothing to measure compliance against."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "acoustic separation",
+     "reference": "Sound transmission class fundamentals",
+     "stem": "Two adjacent conference rooms share a partition built to a tested STC 50, but occupants report clearly hearing conversations next door. The partition was built with the specified assembly. What is the most likely cause?",
+     "options": {
+      "A": "The tested STC rating is inaccurate and the assembly must be replaced",
+      "B": "Flanking paths, most commonly a partition stopped at the ceiling plane with a continuous plenum above, along with unsealed penetrations, are bypassing the partition",
+      "C": "STC 50 is insufficient for conference rooms; STC 70 is required",
+      "D": "Sound transmission is governed by the floor structure rather than partitions"
+     },
+     "correct": "B",
+     "why_correct": "Field performance depends on the weakest path, not the tested assembly. When a partition stops at a suspended ceiling, sound travels over it through the plenum, and unsealed penetrations, back-to-back outlets and ductwork degrade performance further. Extending partitions to the structure and sealing penetrations is the fix.",
+     "why_wrong": {
+      "A": "Laboratory ratings describe the assembly in isolation; the gap between lab and field results comes from installation and flanking.",
+      "C": "STC 50 is generally adequate for conference room privacy when installed without flanking paths.",
+      "D": "Airborne sound between horizontally adjacent rooms is a partition and flanking issue."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "hourly versus stipulated sum",
+     "reference": "AIA B101-2017 Article 11; fee methods",
+     "stem": "A repeat client with a poorly defined program asks the architect to propose a stipulated sum fee for full services, stating that hourly billing makes budgeting impossible. What is the architect's most significant exposure if she agrees without qualification?",
+     "options": {
+      "A": "Stipulated sum fees are prohibited for professional services in most states",
+      "B": "Scope creep is absorbed by the firm, since an undefined program makes it likely that effort will exceed the assumptions the lump sum was based on",
+      "C": "A stipulated sum fee prevents the architect from billing reimbursable expenses under any circumstances",
+      "D": "A stipulated sum obligates the architect to complete the project regardless of the owner's payment history"
+     },
+     "correct": "B",
+     "why_correct": "A fixed fee transfers the risk of effort to the architect. When the program is undefined, the assumptions underlying the fee are unstable, and additional effort erodes profit unless the proposal explicitly states the assumed scope, the number of design options and review cycles, and the triggers for Additional Services.",
+     "why_wrong": {
+      "A": "Stipulated sum fees are common and lawful for professional services.",
+      "C": "Reimbursable expenses are handled separately in Article 11 and can still be billed if the agreement provides for them.",
+      "D": "B101 permits suspension or termination for nonpayment regardless of the fee method."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "record documents",
+     "reference": "AIA A201-2017 \u00a73.11; closeout responsibilities",
+     "stem": "At closeout, the owner asks the architect to produce as-built drawings reflecting all changes made during construction. Under AIA A201-2017 and B101-2017, what is the accurate position?",
+     "options": {
+      "A": "The architect must prepare as-built drawings as part of Basic Services",
+      "B": "The contractor maintains the record set of changes at the site, and preparing record drawings from it is an Additional Service if the owner wants the architect to do it",
+      "C": "Neither party is responsible unless a separate consultant is engaged",
+      "D": "The contractor must prepare sealed record drawings for the owner's permanent files"
+     },
+     "correct": "B",
+     "why_correct": "A201 requires the contractor to maintain at the site a record copy of drawings, specifications, addenda, change orders and approved submittals marked to show field changes. Converting that marked-up record into drawings is not part of the architect's Basic Services, so B101 treats it as an Additional Service.",
+     "why_wrong": {
+      "A": "Basic Services under B101 end with the correction period tasks and do not include record drawings.",
+      "C": "The contractor clearly holds the record-keeping duty during construction.",
+      "D": "Contractors maintain records but do not seal drawings; sealing is a licensed design professional's act."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "CCD pricing methods",
+     "reference": "AIA A201-2017 \u00a77.3.3, \u00a77.3.4",
+     "stem": "A Construction Change Directive has been issued and the parties cannot agree on the cost adjustment. Which method does A201-2017 provide for determining the adjustment in the absence of agreement?",
+     "options": {
+      "A": "The owner sets the amount and the contractor must accept it",
+      "B": "Adjustment by unit prices, by a mutually accepted lump sum, by cost plus a fee where the contractor keeps itemized accounting, or as determined by the Initial Decision Maker",
+      "C": "The adjustment defaults to the contractor's original bid unit costs plus ten percent",
+      "D": "The work is deleted from the contract and rebid"
+     },
+     "correct": "B",
+     "why_correct": "A201 lists the methods for determining a CCD adjustment, including unit prices stated in the documents, an agreed lump sum, cost plus a mutually acceptable fee with itemized accounting, and, failing agreement, determination by the Initial Decision Maker on the basis of reasonable expenditures and savings.",
+     "why_wrong": {
+      "A": "The owner cannot unilaterally fix the price; the contract provides a determination process.",
+      "C": "There is no automatic ten percent default; markups are governed by the agreement.",
+      "D": "Rebidding directed work is not a remedy the contract provides."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "parking and site capacity",
+     "reference": "Zoning parking requirements; site planning",
+     "stem": "A 32,000 SF medical office building requires 1 parking space per 250 SF of gross floor area. Surface parking at this site requires approximately 350 SF per space including drive aisles. The site is 100,000 SF with a 32,000 SF building footprint constraint already established. What does the parking requirement imply?",
+     "options": {
+      "A": "128 spaces are required, needing about 44,800 SF, which fits the remaining site area but leaves little room for setbacks, landscape and stormwater",
+      "B": "128 spaces are required, needing about 12,800 SF",
+      "C": "91 spaces are required, needing about 31,850 SF",
+      "D": "Parking cannot be calculated until the net leasable area is known"
+     },
+     "correct": "A",
+     "why_correct": "32,000 \u00f7 250 = 128 spaces, and 128 \u00d7 350 SF \u2248 44,800 SF. With a 32,000 SF footprint, building plus parking consumes about 76,800 SF of the 100,000 SF site, leaving roughly 23,000 SF for setbacks, landscape buffers, stormwater and circulation, which is tight and should be tested early.",
+     "why_wrong": {
+      "B": "12,800 SF assumes 100 SF per space, which covers only the stall and omits drive aisles.",
+      "C": "91 spaces corresponds to a ratio of 1 per 350 SF, confusing the parking ratio with the area per space.",
+      "D": "The ordinance ratio here is stated per gross floor area, so the calculation does not wait on leasable area."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "wood framing shrinkage",
+     "reference": "Platform framing detailing; cross-grain shrinkage",
+     "stem": "A four-story platform-framed building with wood floor joists and brick veneer needs a detail addressing differential movement. What is the governing behavior, and what detail responds to it?",
+     "options": {
+      "A": "Wood shrinks primarily along its length, so vertical control joints in the veneer are sufficient",
+      "B": "Cumulative cross-grain shrinkage at plates, sills and rim joists causes the wood frame to shorten several inches over four stories while the brick grows, so horizontal soft joints with compressible filler are required beneath shelf angles",
+      "C": "Brick and wood move at similar rates, so no special detail is required",
+      "D": "Shrinkage is eliminated by specifying kiln-dried lumber, so no joint is needed"
+     },
+     "correct": "B",
+     "why_correct": "Wood shrinks very little along the grain but significantly across it, and each floor stacks plates, sills and rim joists whose cross-grain shrinkage accumulates. The veneer meanwhile expands, so the detail must provide horizontal soft joints at shelf angles to absorb closure and keep the veneer from being loaded by the frame.",
+     "why_wrong": {
+      "A": "Longitudinal shrinkage is negligible; the cumulative cross-grain movement is the issue, and vertical joints do not address vertical movement.",
+      "C": "The two materials move in opposite directions, which is precisely the problem.",
+      "D": "Kiln drying reduces but does not eliminate shrinkage, particularly as lumber equilibrates in service."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "site drainage slopes",
+     "reference": "Site grading standards; ADA \u00a7403",
+     "stem": "A plaza between the parking area and the main entrance must drain away from the building while remaining part of the accessible route. What slopes should the design target?",
+     "options": {
+      "A": "A minimum 1 percent running slope with a maximum 5 percent running slope and 2 percent cross slope, allowing drainage while remaining a walking surface rather than a ramp",
+      "B": "A flat surface at zero slope to guarantee accessibility",
+      "C": "A running slope of 8.33 percent, the maximum for accessible routes",
+      "D": "A cross slope of 5 percent to move water off the paving quickly"
+     },
+     "correct": "A",
+     "why_correct": "A walking surface on an accessible route may not exceed 5 percent running slope without becoming a ramp, and cross slope is limited to 2 percent. A minimum of roughly 1 percent keeps water moving, so the usable band is narrow and must be designed deliberately.",
+     "why_wrong": {
+      "B": "Zero slope ponds water, which creates icing hazards in Chicago and damages paving.",
+      "C": "8.33 percent is the maximum ramp slope, which triggers handrails, landings and edge protection.",
+      "D": "5 percent cross slope exceeds the 2 percent maximum and is difficult to traverse in a wheelchair."
+     }
+    }
+   ]
+  },
+  {
+   "set": "A",
+   "questions": [
+    {
+     "division": "PcM",
+     "topic": "quality management program",
+     "reference": "Firm quality assurance and peer review",
+     "stem": "A midsize firm has repeated errors surfacing as RFIs during construction, most involving conflicts between architectural and structural drawings. The principals want a quality program that addresses the root cause. Which measure is most likely to reduce the recurrence?",
+     "options": {
+      "A": "Requiring the project architect to review all RFIs within 24 hours of receipt",
+      "B": "Adding a disclaimer to the drawings stating that the contractor must verify all conditions in the field",
+      "C": "Instituting scheduled interdisciplinary coordination reviews at defined document milestones, with a documented checklist and sign-off before each issuance",
+      "D": "Increasing the firm's professional liability limits and raising the deductible"
+     },
+     "correct": "C",
+     "why_correct": "The failure occurs before issuance, so the countermeasure must occur before issuance. Structured coordination reviews at milestones, documented and signed off, catch discipline conflicts while they are still inexpensive to fix and create a record of the firm's standard of care.",
+     "why_wrong": {
+      "A": "Fast RFI turnaround manages the symptom after the documents have already gone out.",
+      "B": "Blanket disclaimers do not transfer the duty to produce coordinated documents and are given little weight.",
+      "D": "Insurance changes the financial consequence of claims without reducing the errors that generate them."
+     }
+    },
+    {
+     "division": "PjM",
+     "topic": "suspension for nonpayment",
+     "reference": "AIA B101-2017 \u00a79.1 through \u00a79.4",
+     "stem": "An owner has not paid the architect's invoices for 75 days and does not respond to inquiries. The architect wants to stop work but is concerned about abandoning the project. What does B101-2017 permit?",
+     "options": {
+      "A": "The architect may stop work immediately without notice, since nonpayment is a material breach",
+      "B": "The architect may suspend services after giving the owner seven days' written notice, and is not liable for delay caused by the suspension",
+      "C": "The architect must continue services and pursue payment through the Initial Decision Maker",
+      "D": "The architect may terminate immediately but may not suspend"
+     },
+     "correct": "B",
+     "why_correct": "B101 permits suspension of services upon seven days' written notice if the owner fails to make payments when due, and states that the architect is not liable to the owner for delay or damage caused by the suspension. On resumption, the architect is entitled to compensation for expenses of interruption and restart, and to an equitable schedule adjustment.",
+     "why_wrong": {
+      "A": "Notice is required; stopping without it exposes the architect to an abandonment claim.",
+      "C": "The Initial Decision Maker resolves claims under the owner-contractor agreement, not architect fee disputes.",
+      "D": "Termination is also available after continued nonpayment, but suspension is the remedy the agreement provides first."
+     }
+    },
+    {
+     "division": "CE",
+     "topic": "post-occupancy evaluation",
+     "reference": "AIA B101-2017 Article 4; building evaluation practice",
+     "stem": "Eighteen months after occupancy, the owner asks the architect to conduct a post-occupancy evaluation measuring energy performance against the design model and surveying occupant comfort. Under B101-2017, how is this handled, and what is its main professional value?",
+     "options": {
+      "A": "It is part of Basic Services during the correction period, and its value is documenting contractor defects",
+      "B": "It is an Additional Service requiring agreement on scope and compensation, and its value is calibrating design assumptions against measured performance for future projects",
+      "C": "It is prohibited, because measured underperformance creates liability",
+      "D": "It is the commissioning agent's exclusive responsibility and may not be duplicated"
+     },
+     "correct": "B",
+     "why_correct": "Basic Services conclude with the correction period tasks, so a post-occupancy evaluation is an Additional Service negotiated separately. Its professional value lies in closing the loop between predicted and measured performance, which sharpens future modeling assumptions and design decisions.",
+     "why_wrong": {
+      "A": "Basic Services do not include occupant surveys or energy performance measurement.",
+      "C": "Evaluation is not prohibited; findings are managed through scope definition and reporting.",
+      "D": "Commissioning verifies systems against design intent; it overlaps with but does not preclude a broader evaluation."
+     }
+    }
+   ]
+  },
+  {
+   "set": "B",
+   "questions": [
+    {
+     "division": "PA",
+     "topic": "program versus budget reconciliation",
+     "reference": "Programming and cost feasibility",
+     "stem": "Early programming yields a 45,000 SF building. The owner's stated construction budget is $13,500,000, and comparable recent projects in the region are bidding at $385 per SF. What is the architect's most useful finding for the owner at this stage?",
+     "options": {
+      "A": "The program is feasible, since $13,500,000 divided by 45,000 SF is $300 per SF",
+      "B": "At $385 per SF the program implies about $17,325,000, roughly $3.8 million over budget, so program, quality or budget must be reconciled before design proceeds",
+      "C": "The gap can be resolved during design development through value engineering",
+      "D": "Regional cost data should be disregarded in favor of the owner's budget"
+     },
+     "correct": "B",
+     "why_correct": "45,000 SF \u00d7 $385 = $17,325,000 against a $13,500,000 budget, a gap of about $3.8 million or 28 percent. Identifying the mismatch during programming, when area, quality and budget can all still move, is far cheaper than discovering it at bid.",
+     "why_wrong": {
+      "A": "$300 per SF is what the owner can afford, not what the market charges; the calculation confirms the gap rather than resolving it.",
+      "C": "Late value engineering rarely closes a 28 percent gap and usually erodes quality.",
+      "D": "Market data is the evidence base for the recommendation; ignoring it guarantees a bid-day surprise."
+     }
+    },
+    {
+     "division": "PDD",
+     "topic": "door clearance at approach",
+     "reference": "ADA Standards \u00a7404.2.4 maneuvering clearances",
+     "stem": "A corridor door swings toward the approaching user, with a front approach. The designer has 12 inches of wall space on the latch side and 48 inches of clear depth in front of the door. What is the issue?",
+     "options": {
+      "A": "No issue; 12 inches of latch-side clearance is sufficient for a front approach",
+      "B": "A front approach to the pull side requires 18 inches of latch-side clearance and 60 inches of depth, so both dimensions fall short",
+      "C": "Latch-side clearance is required only on the push side of a door",
+      "D": "Maneuvering clearance is waived in corridors serving fewer than 50 occupants"
+     },
+     "correct": "B",
+     "why_correct": "For a front approach to the pull side of a swinging door, the accessibility standards require 18 inches of maneuvering clearance beyond the latch side and 60 inches of clear depth, so a wheelchair user can position beside the door and pull it open. Both provided dimensions are short.",
+     "why_wrong": {
+      "A": "Twelve inches leaves no room to clear the swinging leaf while pulling.",
+      "C": "Push-side clearances exist but are generally smaller; the pull side is the more demanding condition.",
+      "D": "There is no occupant load exemption from maneuvering clearance requirements."
+     }
+    },
+    {
+     "division": "PPD",
+     "topic": "envelope thermal bridging",
+     "reference": "IECC continuous insulation requirements; steel framing",
+     "stem": "A design uses 6-inch steel studs at 16 inches on center with R-21 batt insulation in the cavity and no exterior continuous insulation. The energy modeler reports envelope performance far below expectations. What explains the gap, and what is the most effective correction?",
+     "options": {
+      "A": "The batts were modeled at the wrong density; specify higher-density batts",
+      "B": "Steel studs conduct heat around the insulation, so the assembly's effective R-value is a fraction of the nominal cavity value; adding continuous exterior insulation outboard of the framing restores performance",
+      "C": "Air leakage is the sole cause; a vapor retarder will correct it",
+      "D": "Stud spacing should be increased to 24 inches on center, which solves the problem without added insulation"
+     },
+     "correct": "B",
+     "why_correct": "Steel framing is highly conductive, and repeated studs create thermal bridges that can cut effective assembly R-value to roughly half or less of the nominal cavity rating. Continuous insulation outboard of the studs interrupts every bridge at once, which is why energy codes require it for steel-framed walls.",
+     "why_wrong": {
+      "A": "Batt density does not address conduction through the studs themselves.",
+      "C": "Air leakage matters, but a vapor retarder controls vapor diffusion and is not primarily an air barrier strategy.",
+      "D": "Wider spacing reduces the number of bridges modestly but leaves the mechanism in place and can conflict with structural requirements."
+     }
+    }
+   ]
+  }
+ ]
+}
